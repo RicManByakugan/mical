@@ -461,7 +461,7 @@ async function ValidFacture(clientConnex, res, req) {
                                 res.send({ message: "VALIDATE PAYMENT" })
                             })
                             .catch(errActivte => res.send({ message: "REQUEST ERROR", detailled: "INVALID INFORMATION" }))
-                        dataH = "<header><h1>BONJOUR " + dataActivite.client.nom.toUpperCase() + " " + dataActivite.client.prenom.toUpperCase() + "</h1><h2>" + dataActivite.activite + "</h2></header><section class='flex'><h3>Connectez-vous pour voir les détailles</h3></section><footer><p>Mical 2023</p></footer>"
+                        dataH = "<header><h1>BONJOUR " + dataActivite.client.nom.toUpperCase() + " " + dataActivite.client.prenom.toUpperCase() + "</h1><h2>" + dataActivite.activite + "</h2></header><section class='flex'><h3>Connectez-vous pour voir les détailles</h3></section><footer><a href="https://mical-m1.web.app/" tagert="blank">Mical 2023</a></footer>"
                         outil.SendMail(dataActivite.client.email, dataActivite.activite, "", dataH)
                     }
                 } catch (error) {
@@ -564,7 +564,7 @@ async function CarClientOut(clientConnex, res, req) {
                             res.send({ message: "CAR OUT" })
                         })
                         .catch(errActivte => res.send({ message: "REQUEST ERROR", detailled: "INVALID INFORMATION" }))
-                    dataH = "<header><h1>BONJOUR " + dataActivite.client.nom.toUpperCase() + " " + dataActivite.client.prenom.toUpperCase() + "</h1><h2>" + dataActivite.activite + "</h2></header><section class='flex'><h3>Connectez-vous pour voir les détailles</h3></section><footer><p>Mical 2023</p></footer>"
+                    dataH = "<header><h1>BONJOUR " + dataActivite.client.nom.toUpperCase() + " " + dataActivite.client.prenom.toUpperCase() + "</h1><h2>" + dataActivite.activite + "</h2></header><section class='flex'><h3>Connectez-vous pour voir les détailles</h3></section><footer><a href="https://mical-m1.web.app/" tagert="blank">Mical 2023</a></footer>"
                     outil.SendMail(dataActivite.client.email, dataActivite.activite, "", dataH)
                 }
             }
@@ -721,7 +721,7 @@ async function receptionneCarFacture(clientConnex, res, req) {
                                     res.send({ message: "FACTURE FOR CAR ADDED" })
                                 })
                                 .catch(errActivte => res.send({ message: "REQUEST ERROR", detailled: "INVALID INFORMATION" }))
-                            dataH = "<header><h1>BONJOUR " + dataActivite.client.nom.toUpperCase() + " " + dataActivite.client.prenom.toUpperCase() + "</h1><h2>" + dataActivite.activite + "</h2></header><section class='flex'><h3>Connectez-vous pour voir les détailles</h3></section><footer><p>Mical 2023</p></footer>"
+                            dataH = "<header><h1>BONJOUR " + dataActivite.client.nom.toUpperCase() + " " + dataActivite.client.prenom.toUpperCase() + "</h1><h2>" + dataActivite.activite + "</h2></header><section class='flex'><h3>Connectez-vous pour voir les détailles</h3></section><footer><a href="https://mical-m1.web.app/" tagert="blank">Mical 2023</a></footer>"
                             outil.SendMail(dataActivite.client.email, dataActivite.activite, "", dataH)
                         }
                     } catch (error) {
@@ -810,7 +810,7 @@ async function AddCarReparation(clientConnex, req, res) {
                             res.send({ message: "CAR REPARATION ADDED" })
                         })
                         .catch(errActivte => res.send({ message: "REQUEST ERROR", detailled: "INVALID INFORMATION" }))
-                    dataH = "<header><h1>BONJOUR " + dataActivite.client.nom.toUpperCase() + " " + dataActivite.client.prenom.toUpperCase() + "</h1><h2>" + dataActivite.activite + "</h2></header><section class='flex'><h3>Connectez-vous pour voir les détailles</h3></section><footer><p>Mical 2023</p></footer>"
+                    dataH = "<header><h1>BONJOUR " + dataActivite.client.nom.toUpperCase() + " " + dataActivite.client.prenom.toUpperCase() + "</h1><h2>" + dataActivite.activite + "</h2></header><section class='flex'><h3>Connectez-vous pour voir les détailles</h3></section><footer><a href="https://mical-m1.web.app/" tagert="blank">Mical 2023</a></footer>"
                     outil.SendMail(dataActivite.client.email, dataActivite.activite, "", dataH)
                 }
             } catch (error) {
@@ -885,7 +885,7 @@ async function AddCarReception(clientConnex, req, res) {
                             res.send({ message: "CAR RECEPTIONNED" })
                         })
                         .catch(errActivte => res.send({ message: "REQUEST ERROR", detailled: "INVALID INFORMATION" }))
-                    dataH = "<header><h1>BONJOUR " + dataActivite.client.nom.toUpperCase() + " " + dataActivite.client.prenom.toUpperCase() + "</h1><h2>" + dataActivite.activite + "</h2></header><section class='flex'><h3>Connectez-vous pour voir les détailles</h3></section><footer><p>Mical 2023</p></footer>"
+                    dataH = "<header><h1>BONJOUR " + dataActivite.client.nom.toUpperCase() + " " + dataActivite.client.prenom.toUpperCase() + "</h1><h2>" + dataActivite.activite + "</h2></header><section class='flex'><h3>Connectez-vous pour voir les détailles</h3></section><footer><a href="https://mical-m1.web.app/" tagert="blank">Mical 2023</a></footer>"
                     outil.SendMail(dataActivite.client.email, dataActivite.activite, "", dataH)
                 }
             } catch (error) {
